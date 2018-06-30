@@ -7,4 +7,4 @@
 * Les Notions
 * Synthèse AiO
 
-*Réalisé sur Visual Code Studio
+*Réalisé sur Visual Code Studio*
