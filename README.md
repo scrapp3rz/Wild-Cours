@@ -6,12 +6,12 @@ Partage des Cours WCS [Leçons]
 
 # Détails des Cours
 
-* S1 : Base de `Javascript`
-** Les Structures de Données
-** Les Objets
-** Les Boucles
-** Les Opérateurs
-** Synthèse AiO
+## S1 : Base de `Javascript`
+* Les Structures de Données
+* Les Objets
+* Les Boucles
+* Les Opérateurs
+* Synthèse AiO
 
 ---
 
