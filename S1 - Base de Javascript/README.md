@@ -6,3 +6,5 @@
 * Les Opérateurs
 * Les Notions
 * Synthèse AiO
+
+*Réalisé sur Visual Code Studio
