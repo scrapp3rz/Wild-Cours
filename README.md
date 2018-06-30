@@ -11,6 +11,7 @@ Partage des Cours WCS [Leçons]
 * Les Objets
 * Les Boucles
 * Les Opérateurs
+* Les Notions
 * Synthèse AiO
 
 ---
