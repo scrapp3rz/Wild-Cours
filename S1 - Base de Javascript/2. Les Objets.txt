@@ -1,0 +1,56 @@
+Les Objets / Propriétés
+
+objet.propriété
+objet["propriété]
+
+Pour fabriquer un objet il faut définir une classe (class)
+
+Class --> instantiation (création) --> objets (instances)
+
+let v= new Voiture {                                v est une instance de la classe Voiture
+    couleur: "bleue",                               le mot clé new permet d'instancier une instance de la classe Voiture
+    marque: "honda",
+
+}
+
+let c= v.couleur;         est équivalent à         let c= v['couelur'];
+
+le "." est opérateur d'accession
+
+
+### En Javascript UNIQUEMENT :
+
+Il existe 1 manière très basique de définir un objet, le JSON (JavaScript Object Notation)
+
+Le JSON est un façon de structuré les donées.
+
+Syntaxe du JSON :
+
+{
+    key:    value,              key = propriété = variable
+    key1:   value,              value = valeur de la variable
+    key2:   value
+}
+
+Exemple :
+
+let v={k:x}
+    v.k -> x        ou      v["k"] -> x
+
+let t=["a","b","c"];
+    {
+        0: "a",
+        1: "b",
+        2: "c"
+    };
+
+
+class Voiture {
+    constructor(c,m){
+        this.couleur = c;
+        this.marque = m;
+    }
+
+    rouler(v) {
+    }
+};

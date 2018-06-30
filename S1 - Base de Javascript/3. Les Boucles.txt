@@ -1,0 +1,43 @@
+Les Boucles
+
+For  (Pour)   
+
+Une boucle for répète des instructions jusqu'à ce qu'une condition donnée ne soit plus vérifiée.   
+
+for ([expressionInitiale]; [condition]; [expressionIncrément]) {
+    instruction
+}
+
+1- Généralement, on utilise cette expression pour initialiser un ou plusieurs compteurs dont on se servira dans la boucle.
+    Il est possible d'utiliser des expressions plus complexes si besoin. Elle peut servir à déclarer des variables.
+
+2- L'expression condition est évaluée, si elle vaut true, les instructions contenues dans la boucle sont exécutées.
+    Si la valeur de condition est false, la boucle for se termine. Si la condition est absente, elle est considérée comme true.
+
+3- L'instruction "instruction" est exécutée.
+
+4- Si elle est présente, l'expression de mise à jour expressionIncrément est exécutée.
+
+5- On retourne ensuite à l'étape 2.
+
+_____________________________________________
+
+While (Tant Que)
+
+Une instruction while permet d'exécuter une instruction tant qu'une condition donnée est vérifiée.
+
+while (condition) {
+    instruction
+}
+
+Si la condition n'est pas vérifiée, l'instruction "instruction" n'est pas exécutée et le contrôle passe
+directement à l'instruction suivant la boucle.
+
+Le test de la condition s'effectue avant d'exécuter instruction. Si la condition renvoie true
+(ou une valeur équivalente), instruction sera exécutée et la condition sera testée à nouveau.
+Si la condition renvoie false (ou une valeur équivalente), l'exécution s'arrête et le contrôle
+est passé à l'instruction qui suit while.
+
+
+
+

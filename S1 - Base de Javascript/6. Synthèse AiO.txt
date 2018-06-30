@@ -1,0 +1,378 @@
+Les Notions :
+
+Attribut : Est une variable dans une classe (scope)
+
+Espace de noms : Conteneur qui permet aux développeurs d'empaqueter les différentes fonctionnalités d'un programme
+                 sous un même nom d'application.
+
+Classe : Définit les proprités (attribut) qui sont rattaché à l'objet.
+
+Objet : Une instance (un "exemplaire") d'une classe.
+
+Scope/Contexte : Détermine l'accessibilité, la portée d'une variable (Locale ou Globale).
+
+Propriété : Une caractéristique d'un objet (sa couleur par exemple).
+
+Méthode : Une capacité/action d'un objet (changer de couleur par exemple) donc une méthode est une Fonction.
+
+Constructeur : Une méthode appelée au moment de l'instantiation.
+
+Héritage : Une classe peut hériter des caractéristiques et des fonctionnalités d'une autre classe.
+
+Encapsulation : Une classe définit uniquement les caractéristiques de son objet, une méthode définit uniquement la façon dont elle s'exécute.
+                On regroupe donc les données et les méthodes qui utilisent ces données.
+
+Abstraction : La conjonction entre l'utilisation de l'héritage, de méthodes ou de propriétés d'un objet pour simuler un modèle de la réalité.
+
+Polymorphisme : Poly signifie « plusieurs » et morphisme signifie « formes ». Cela signifie que différentes classes peuvent définir
+                la même méthode ou la même propriété.
+
+Incrémentation : Augmentation de la valeur (d'une variable) à chaque exécution d'un programme.
+
+Décrémentation : Inverse de l'incrémentation
+
+Instanciation : est l'action d'instancier, de créer un objet à partir d'un modèle.
+                 Elle est réalisée par la composition de deux opérations : l'allocation et l'initialisation.
+                 L'allocation consiste à réserver un espace mémoire au nouvel objet. L'initialisation consiste à fixer l'état du nouvel objet.
+
+Implémentation : est l'&ction de fabriquer/remplir le corps d'une fonction.
+
+_______________________________________________________________________________________________________________________________________________
+
+Structure de Données (Javascripts et Algo)
+
+    + Classqiue > Rare
+
+____________________________________________
+
+    - Booléan  (True ou False)
+
+    TABLE AND :
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              0
+    0       1              0
+    1       0              0
+    1       1              1
+
+    TABLE OR :  (ou inclusif)
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              0
+    0       1              1
+    1       0              1
+    1       1              1
+
+    TABLE XOR : (ou exclusif)
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              0
+    0       1              1
+    1       0              1
+    1       1              0
+
+    TABLE NOT : (inverse)
+
+    Exemple sur table AND > NAND
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              1
+    0       1              1
+    1       0              1
+    1       1              0
+
+____________________________________________
+
+    - Number ()
+
+    x < 0
+    x > 0
+
+    n € N (n apprtient à un nombre N (0 à Infini)
+    n € R (R = tous les nombres)
+
+    Nombre Entier = int (integers)
+    Nombre Flottant : float (floating)
+    Nombre Positif : unsigned (non signé)
+    Nombre Négatif : signed (signé : ex -2)
+
+    Opérateur : + - / * % (modulo = reste de la division entière)
+
+    10 % 3 = (Combien y a t-il de fois 3 dans 10 - ce que je cherche c'est le reste)
+
+    SI (x % 2 = 0) ALORS x est paire
+
+    SI ( condition BOOLEAN seulement ) ALORS ......
+
+____________________________________________
+
+    - Tableau : Array [ ]
+
+    A = [2,3,4,5,6,7]
+
+    len (A) = 6  (longueur = len (lenght))
+
+    A[indice] = x
+    A[0] = 2 (1er élément commence à 0)
+
+____________________________________________
+
+    - Caractère : char "a"
+
+    "a" + "a" = "aa"
+
+    Addition de caratère = Chaîne de caractère
+
+    Chaîne de caratère = string "abc"
+
+    Tous ce qui s'applique à un tableau s'applique à une chaîne de caractère
+
+____________________________________________
+
+    - Les Fonctions : function (func)
+
+    Une fonction a toujours 3 choses : 1.Nom, 2.Paramètre d'entrée, 3.Valeur de Retour
+
+    exemple : f(x) = 2x + 1 /////// f = nom -- (x) = Paramètre -- 2x + 1 = Valeur de Retour
+    
+    Pseudo code :
+    
+//  Func hello([carré] String) : String    ====     Signature de la fonction
+    return 'Hello' + [carré]
+
+    function hello(name) {
+        return 'hello' + name;
+    }
+
+    Si une fonction n'est pas destinée à renvoyer quelque chose elle renvéra : NULL ou VOID ou undefined
+
+    function h(name, age) {
+        retrun 'hello' + name;
+    }
+
+    h();
+
+____________________________________________
+
+    - Les Variables
+
+    let x = 0
+
+    function add_one_to_x () {
+        x = x + 1
+    }
+
+    return add_one_to_x;
+
+    Attribution variable :
+
+    let
+    var
+    const = constante
+
+    Une variable à toujours : Nom (aA, 0-9, _ ), Valeur, Contexte (Scope)
+
+    Exemple : add_one_to_x -> Snake Case
+              addOneTox -> Camel Case
+
+    let x = 0
+
+    nom = x
+    valeur = 0
+    scope = contexte / capacité à atteindre 
+
+    { ouverture du contexte 
+    
+    fermeture du contexte}
+
+    On peut assigné des fonctions à des variables :
+
+    let hello = function(name) {
+
+    }
+
+_______________________________________________________________________________________________________________________________________________
+
+Les Objets / Propriétés
+
+objet.propriété
+objet["propriété]
+
+Pour fabriquer un objet il faut définir une classe (class)
+
+Class --> instantiation (création) --> objets (instances)
+
+let v= new Voiture {                                v est une instance de la classe Voiture
+    couleur: "bleue",                               le mot clé new permet d'instancier une instance de la classe Voiture
+    marque: "honda",
+
+}
+
+let c= v.couleur;         est équivalent à         let c= v['couelur'];
+
+le "." est opérateur d'accession
+
+
+### En Javascript UNIQUEMENT :
+
+Il existe 1 manière très basique de définir un objet, le JSON (JavaScript Object Notation)
+
+Le JSON est un façon de structuré les donées.
+
+Syntaxe du JSON :
+
+{
+    key:    value,              key = propriété = variable
+    key1:   value,              value = valeur de la variable
+    key2:   value
+}
+
+Exemple :
+
+let v={k:x}
+    v.k -> x        ou      v["k"] -> x
+
+let t=["a","b","c"];
+    {
+        0: "a",
+        1: "b",
+        2: "c"
+    };
+
+
+class Voiture {
+    constructor(c,m){
+        this.couleur = c;
+        this.marque = m;
+    }
+
+    rouler(v) {
+    }
+};
+
+_______________________________________________________________________________________________________________________________________________
+
+Les Boucles
+
+For  (Pour)   
+
+Une boucle for répète des instructions jusqu'à ce qu'une condition donnée ne soit plus vérifiée.   
+
+for ([expressionInitiale]; [condition]; [expressionIncrément]) {
+    instruction
+}
+
+1- Généralement, on utilise cette expression pour initialiser un ou plusieurs compteurs dont on se servira dans la boucle.
+    Il est possible d'utiliser des expressions plus complexes si besoin. Elle peut servir à déclarer des variables.
+
+2- L'expression condition est évaluée, si elle vaut true, les instructions contenues dans la boucle sont exécutées.
+    Si la valeur de condition est false, la boucle for se termine. Si la condition est absente, elle est considérée comme true.
+
+3- L'instruction "instruction" est exécutée.
+
+4- Si elle est présente, l'expression de mise à jour expressionIncrément est exécutée.
+
+5- On retourne ensuite à l'étape 2.
+
+_____________________________________________
+
+While (Tant Que)
+
+Une instruction while permet d'exécuter une instruction tant qu'une condition donnée est vérifiée.
+
+while (condition) {
+    instruction
+}
+
+Si la condition n'est pas vérifiée, l'instruction "instruction" n'est pas exécutée et le contrôle passe
+directement à l'instruction suivant la boucle.
+
+Le test de la condition s'effectue avant d'exécuter instruction. Si la condition renvoie true
+(ou une valeur équivalente), instruction sera exécutée et la condition sera testée à nouveau.
+Si la condition renvoie false (ou une valeur équivalente), l'exécution s'arrête et le contrôle
+est passé à l'instruction qui suit while.
+
+_______________________________________________________________________________________________________________________________________________
+
+Les Opérateurs :
+
+### Opérateur d'Affectation :
+
+Affectation :                       x = y      
+
+Affectation après addition :        x += y      ->      x = x + y
+
+Affectation après soustraction :    x -= y      ->      x = x - y
+
+Afectation après multiplication :   x *= y      ->      x = x * y 
+
+Affectation après division :        x /= y      ->      x = x / y
+
+Affectation du reste :              x %= y      ->      x = x % y
+
+__________________________________________________________________
+
+
+### Opérateur de Comparaison :
+
+Egalité                 =
+
+Inégalité               !=
+
+Egalité Stricte         ===
+
+Inégalité Stricte       !==
+
+Supériorité Stricte     >
+
+Supériorité ou Egalité  >=
+
+Infériorité Stricte     <
+
+Infériorité ou Egalité  <=
+
+__________________________________________________________________
+
+### Opérateur Arithmétiques :
+
+Reste       %
+
+Incrément   ++
+
+Décrément   --
+
+__________________________________________________________________
+
+### Opérateur Logiques :
+
+ET Logique  &&
+
+OU Logique  ||
+
+NON Logique !expr
+
+__________________________________________________________________
+
+### Autres
+
+Les Accesseurs et/ou Appel des Méthodes  [] .
+
+Juxtaposition  ->   ,
+
+Appel/Création d'une fonction ou d'objet    ()
+
+Sert à modifier l'ordre de priorité d'une opération   ()
+
+Sert à assigner une clé à une valeur     :

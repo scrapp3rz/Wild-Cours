@@ -1,0 +1,70 @@
+Les Opérateurs :
+
+### Opérateur d'Affectation :
+
+Affectation :                       x = y      
+
+Affectation après addition :        x += y      ->      x = x + y
+
+Affectation après soustraction :    x -= y      ->      x = x - y
+
+Afectation après multiplication :   x *= y      ->      x = x * y 
+
+Affectation après division :        x /= y      ->      x = x / y
+
+Affectation du reste :              x %= y      ->      x = x % y
+
+__________________________________________________________________
+
+
+### Opérateur de Comparaison :
+
+Egalité                 =
+
+Inégalité               !=
+
+Egalité Stricte         ===
+
+Inégalité Stricte       !==
+
+Supériorité Stricte     >
+
+Supériorité ou Egalité  >=
+
+Infériorité Stricte     <
+
+Infériorité ou Egalité  <=
+
+__________________________________________________________________
+
+### Opérateur Arithmétiques :
+
+Reste       %
+
+Incrément   ++
+
+Décrément   --
+
+__________________________________________________________________
+
+### Opérateur Logiques :
+
+ET Logique  &&
+
+OU Logique  ||
+
+NON Logique !expr
+
+__________________________________________________________________
+
+### Autres
+
+Les Accesseurs et/ou Appel des Méthodes  [] .
+
+Juxtaposition  ->   ,
+
+Appel/Création d'une fonction ou d'objet    ()
+
+Sert à modifier l'ordre de priorité d'une opération   ()
+
+Sert à assigner une clé à une valeur     :

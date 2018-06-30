@@ -1,0 +1,163 @@
+Structure de Données (Javascripts et Algo)
+
+    + Classqiue > Rare
+
+____________________________________________
+
+    - Booléan  (True ou False)
+
+    TABLE AND :
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              0
+    0       1              0
+    1       0              0
+    1       1              1
+
+    TABLE OR :  (ou inclusif)
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              0
+    0       1              1
+    1       0              1
+    1       1              1
+
+    TABLE XOR : (ou exclusif)
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              0
+    0       1              1
+    1       0              1
+    1       1              0
+
+    TABLE NOT : (inverse)
+
+    Exemple sur table AND > NAND
+
+    Entrée              Sortie
+    --------------------------
+    a   |   b              c
+    --------------------------
+    0       0              1
+    0       1              1
+    1       0              1
+    1       1              0
+
+____________________________________________
+
+    - Number ()
+
+    x < 0
+    x > 0
+
+    n € N (n apprtient à un nombre N (0 à Infini)
+    n € R (R = tous les nombres)
+
+    Nombre Entier = int (integers)
+    Nombre Flottant : float (floating)
+    Nombre Positif : unsigned (non signé)
+    Nombre Négatif : signed (signé : ex -2)
+
+    Opérateur : + - / * % (modulo = reste de la division entière)
+
+    10 % 3 = (Combien y a t-il de fois 3 dans 10 - ce que je cherche c'est le reste)
+
+    SI (x % 2 = 0) ALORS x est paire
+
+    SI ( condition BOOLEAN seulement ) ALORS ......
+
+____________________________________________
+
+    - Tableau : Array [ ]
+
+    A = [2,3,4,5,6,7]
+
+    len (A) = 6  (longueur = len (lenght))
+
+    A[indice] = x
+    A[0] = 2 (1er élément commence à 0)
+
+____________________________________________
+
+    - Caractère : char "a"
+
+    "a" + "a" = "aa"
+
+    Addition de caratère = Chaîne de caractère
+
+    Chaîne de caratère = string "abc"
+
+    Tous ce qui s'applique à un tableau s'applique à une chaîne de caractère
+
+____________________________________________
+
+    - Les Fonctions : function (func)
+
+    Une fonction a toujours 3 choses : 1.Nom, 2.Paramètre d'entrée, 3.Valeur de Retour
+
+    exemple : f(x) = 2x + 1 /////// f = nom -- (x) = Paramètre -- 2x + 1 = Valeur de Retour
+    
+    Pseudo code :
+    
+//  Func hello([carré] String) : String    ====     Signature de la fonction
+    return 'Hello' + [carré]
+
+    function hello(name) {
+        return 'hello' + name;
+    }
+
+    Si une fonction n'est pas destinée à renvoyer quelque chose elle renvéra : NULL ou VOID ou undefined
+
+    function h(name, age) {
+        retrun 'hello' + name;
+    }
+
+    h();
+
+____________________________________________
+
+    - Les Variables
+
+    let x = 0
+
+    function add_one_to_x () {
+        x = x + 1
+    }
+
+    return add_one_to_x;
+
+    Attribution variable :
+
+    let
+    var
+    const = constante
+
+    Une variable à toujours : Nom (aA, 0-9, _ ), Valeur, Contexte (Scope)
+
+    Exemple : add_one_to_x -> Snake Case
+              addOneTox -> Camel Case
+
+    let x = 0
+
+    nom = x
+    valeur = 0
+    scope = contexte / capacité à atteindre 
+
+    { ouverture du contexte 
+    
+    fermeture du contexte}
+
+    On peut assigné des fonctions à des variables :
+
+    let hello = function(name) {
+
+    }
