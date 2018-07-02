@@ -6,7 +6,7 @@
 * Différence : Public/Privé - Get/Set
 * Notion de Composition
 * Notion : Static
-* Notion ; Interface
+* Notion : Interface
 * Notion : Héritage
 
 _Réalisé sur Visual Code Studio_
