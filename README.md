@@ -19,7 +19,7 @@ _1 Fichier_
 
 _5 Fichiers_
 
-## S2 : Javascript Suite 
+## S2 : `Javascript` Suite 
 * Comparatif : Var/Let/Const
 * Différence : Public/Privé - Get/Set
 * Notion de Composition
