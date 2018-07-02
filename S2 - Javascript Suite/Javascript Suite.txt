@@ -1,0 +1,160 @@
+Différence LET VAR CONST
+
+Constante = const A = 1;
+Les constantes s'écrivent en MAJUSCULE (ex: TIME_TO_LEFT   ->   const TTL = 1;)
+Ce sont les seules variables qu'on autorise à être "Global".
+
+VAR et LET n'ont pas la même portée !
+
+var a = 1;                                      let a = 1;
+
+if(true) {                                      if(true) {
+    var a = 2;                                      let a = 2;
+}                                               }
+
+console.log(a) = 2;                             console.log(a) = 1;
+
+
+Hoisting : définition dans le fichier Notions.txt
+
+'use strict' empeche l'utilisation de variable après leur utilisation.
+
+Il est préférable d'éviter le mot clef 'var' afin d'éviter les bugs !!!
+
+___________________________________________________________________________________________________________________________
+
+FRONT :
+
+[HTML] pointe vers -> index.js -> moduleA.js -> [CSS]
+  |                               moduleB.js -> [CSS]
+  v                               moduleC.js -> [CSS]
+[CSS]
+
+Compilateur : Webpack, Prépack, Babel, Rollup
+
+[HTML] ne pointera pas index.js mais un [Bundle]
+
+___________________________________________________________________________________________________________________________
+
+Différence PUBLIC / PRIVE --- GET / SET
+
+Public : accessible à tous , si une variable est accessible hors contexte alors elle est public.
+
+Privé :  inverse de public
+
+function f(n) {
+    let a = 1;
+
+    return x + a;
+}
+
+class Voiture {
+    constructeur() {
+        this.marque = 'honda';
+        let couleur = 'rouge';
+    }
+}
+
+let v = new Voiture ()
+    v.marque -> 'honda';
+
+    l'attribut marque est public, je peux acceder hors contexte, la variable couleur est privée car elle n'est pas attachée à "this"
+
+    la convention recommande de l'attacher au this avec un _ (ex : this._couleur = 'couleur';    ou      this.__couleur = 'couleur'; )
+
+
+class Human {
+    constructor (age, cc) {
+        this._age = bd;
+        this._cc = 'chauve';
+    }
+    get age() {
+        return this._age;
+    }
+    set cc(couleur) {
+        this.cc = couleur;
+    }
+}
+
+let h = new Human(01011990, 'chauve');
+
+___________________________________________________________________________________________________________________________
+
+Notion : Composition
+
+/*
+    Organe est un tableau
+*/
+
+class Organe {
+    contructor(nom, poids) {
+        this._nom = nom;
+        this._poids = poids;
+    }
+    get nom() {
+        return this._nom;
+    }
+    get poids() {
+        return this._poids;
+    }
+}
+
+class Human {
+    contructor(age, organes){
+        this._age = age;
+        this._organes = organes;
+    }
+    let coeur = new Organe('coeur', 10kg);
+    let foie = new Organe('foie', 1kg);
+
+    let h =  new Human(17, [coeur, foie]);
+}
+
+Dans un constructor tout est privé.
+
+___________________________________________________________________________________________________________________________
+
+Notion : STATIC
+
+Static s'applique à : class (ou eXclusif) attribut ou méthode
+  > Pas de this mais à la place, le nom de la classe elle même.
+
+  class Voiture {
+      static nbMinPneus() {
+          return 4;
+      }
+  }
+
+  Voiture.nbMinPneus();
+
+___________________________________________________________________________________________________________________________
+
+INTERFACE : API : Application Programming Interface
+
+class Voiture {                                 let v = new Voiture
+    m1() {                                          v.m1();
+    }                                               v.m2();
+    me 2() {    
+    }
+}
+
+Si m1 est renommé en move dans la classe alors l'interface est cassée.
+
+___________________________________________________________________________________________________________________________
+
+HERITAGE : définition dans le fichier Notions.txt
+
+class Animal {
+    constructeur (bd) {
+        this._bd = bd;
+    }
+}
+
+class Human extends Animal {
+    c(bd) {
+        this._bd = bd;
+        super(bd);
+    }
+}
+
+MOT CLE : super = tu vas appelé le constructeur de ma classe parente.
